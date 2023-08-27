@@ -11,7 +11,8 @@ module.exports = {
     },
     extend: {
       colors : {
-        'nikeorange' : '#ff6452'
+        'nikeorange' : '#ff6452',
+        'bgpale'     : '#f5f6ff'
       },
     },
   },
