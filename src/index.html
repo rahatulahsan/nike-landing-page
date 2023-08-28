@@ -14,7 +14,7 @@
   <main class="relative">
     <header class="w-full absolute z-10 p-2">
         
-        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <nav class="bg-transparent border-gray-200 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
                 <img src="../assets/images/header-logo.svg" class="h-5 mr-3" alt="Flowbite Logo" />
@@ -26,18 +26,18 @@
                 </svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class=" font-sans font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul class=" font-sans font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="#" class="block py-2 pl-3 pr-4 text-white bg-nikeorange rounded md:bg-transparent md:text-nikeorange md:p-0 dark:text-white md:dark:text-nikeorange" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
                 </li>
                 </ul>
             </div>
@@ -45,58 +45,65 @@
         </nav>
   
     </header>
-    <section id="hero" class="pt-24 ">
-        <!--Hero Container start-->
-        <div class="flex flex-col space-y-8 pl-6 pr-6">
-            <p class="font-sans text-xl capitalize text-nikeorange">Our summer collections</p>
-            <h1 class="font-serif text-7xl font-bold leading-tight">The New Arrival <span class="text-nikeorange">Nike</span> Shoes</h1>
-            <p class="font-sans text-lg text-gray-500">Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
-            <button class="flex  justify-center items-center w-3/5 font-sans py-4 text-white gap-2 bg-nikeorange border-nikeorange rounded-full cursor-pointer">
-                Shop now<img src="../assets/icons/arrow-right.svg" alt="arrow-right"/>
-            </button>
-            <!--Numbers Container-->
-            <div class="flex justify-start items-start flex-wrap w-full pt-16 gap-16">
-                <div>
-                    <h2 class="font-serif text-5xl font-bold">1k+</h2>
-                    <p class="font-sans text-base text-gray-500 pt-2">Brands</p>
-                </div>
-                <div>
-                    <h2 class="font-serif text-5xl font-bold">500+</h2>
-                    <p class="font-sans text-base text-gray-500 pt-2">Shops</p>
-                </div>
-                <div>
-                    <h2 class="font-serif text-5xl font-bold">250k+</h2>
-                    <p class="font-sans text-base text-gray-500 pt-2">Customers</p>
-                </div>
-            </div>
-            <!--Numbers container end-->
-        </div>
-        <!--Hero Container end-->
+    <section id="hero" class="pt-24 max-container">
 
-        <!--Hero Photo Container start-->
-        <div class=" relative flex flex-col items-center justify-center bg-hero bg-center w-full my-14">
-            <img src="../assets/images/big-shoe1.png" alt="big-shoe1" class="my-36"/>
-            <!--Hero photo carousel start-->
-            <div class="flex flex-row px-4 space-x-3 absolute -bottom-7">
-                <div class="border-nikeorange border-2 rounded-xl cursor-pointer">
-                    <div class="flex justify-center items-center bg-card bg-cover bg-center rounded-xl">
-                        <img src="../assets/images/thumbnail-shoe1.svg" alt="thumbnail-shoe1" width="127" height="103" class="object-contain"/>
+        <!--Parent Container Start-->
+        <div class="flex flex-col xl:flex-row">
+
+            <!--Hero Container start-->
+            <div class=" relative flex flex-col space-y-8 px-6 sm:px-12 xl:w-2/5">
+                <p class="font-sans text-xl capitalize text-nikeorange">Our summer collections</p>
+                <h1 class="font-serif text-8xl font-bold max-sm:leading-[82px] max-sm:text-[72px] "><span class="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span> <span class="text-nikeorange inline-block mt-6">Nike</span> Shoes</h1>
+                <p class="font-sans text-lg text-gray-500 max-w-md xl:mb-14">Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
+                <button class="flex  justify-center items-center w-3/5 font-sans py-4 text-white gap-2 bg-nikeorange border-nikeorange rounded-full cursor-pointer max-w-xs">
+                    Shop now<img src="../assets/icons/arrow-right.svg" alt="arrow-right"/>
+                </button>
+                <!--Numbers Container-->
+                <div class="flex justify-start items-start flex-wrap w-full pt-16 gap-10">
+                    <div>
+                        <h2 class="font-serif text-5xl font-bold">1k+</h2>
+                        <p class="font-sans text-base text-gray-500 pt-2">Brands</p>
+                    </div>
+                    <div>
+                        <h2 class="font-serif text-5xl font-bold">500+</h2>
+                        <p class="font-sans text-base text-gray-500 pt-2">Shops</p>
+                    </div>
+                    <div>
+                        <h2 class="font-serif text-5xl font-bold">250k+</h2>
+                        <p class="font-sans text-base text-gray-500 pt-2">Customers</p>
                     </div>
                 </div>
-                <div>
-                    <div class="flex justify-center items-center bg-card bg-cover bg-center rounded-xl">
-                        <img src="../assets/images/thumbnail-shoe2.svg" alt="thumbnail-shoe2" width="127" height="103" class="object-contain"/>
-                    </div>
-                </div>
-                <div>
-                    <div class="flex justify-center items-center bg-card bg-cover bg-center rounded-xl">
-                        <img src="../assets/images/thumbnail-shoe3.svg" alt="thumbnail-shoe3" width="127" height="103" class="object-contain"/>
-                    </div>
-                </div>
+                <!--Numbers container end-->
             </div>
-            <!--Hero photo carousel end-->
+            <!--Hero Container end-->
+
+            <!--Hero Photo Container start-->
+            <div class=" relative flex flex-1 flex-col items-center justify-center bg-hero bg-center w-full my-14 xl:min-h-screen xl:-mt-24">
+                <img src="../assets/images/big-shoe1.png" alt="big-shoe1" class="my-36"/>
+                <!--Hero photo carousel start-->
+                <div class="flex flex-row px-4 space-x-3 absolute -bottom-7">
+                    <div class="border-nikeorange border-2 rounded-xl cursor-pointer">
+                        <div class="flex justify-center items-center bg-card bg-cover bg-center rounded-xl xl:w-40 xl:h-40">
+                            <img src="../assets/images/thumbnail-shoe1.svg" alt="thumbnail-shoe1" width="127" height="103" class="object-contain"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center bg-card bg-cover bg-center rounded-xl xl:w-40 xl:h-40">
+                            <img src="../assets/images/thumbnail-shoe2.svg" alt="thumbnail-shoe2" width="127" height="103" class="object-contain"/>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center bg-card bg-cover bg-center rounded-xl xl:w-40 xl:h-40">
+                            <img src="../assets/images/thumbnail-shoe3.svg" alt="thumbnail-shoe3" width="127" height="103" class="object-contain"/>
+                        </div>
+                    </div>
+                </div>
+                <!--Hero photo carousel end-->
+            </div>
+            <!--Hero Photo Container end-->
         </div>
-        <!--Hero Photo Container end-->
+        <!--Parent Container End-->
+
     </section>
     <section id="popularproducts" class="pt-24">
         <!--Conatiner contents start-->
@@ -173,7 +180,7 @@
         <!-- Super quality top conatiner end-->
 
         <!--Quality box container start-->
-        <div class="flex flex-col gap-4 px-6 py-14">
+        <div class="flex flex-col gap-8 px-6 py-14">
             <div class="flex flex-col gap-4 bg-white rounded-xl shadow-xl px-10 py-16">
                 <div class="w-11 h-11 bg-nikeorange flex justify-center items-center rounded-full">
                     <img src="../assets/icons/truck-fast.svg" alt="truck-fast"/>
@@ -315,9 +322,9 @@
         </div>
         <!--Copyright-->
         <div class="flex flex-col items-center my-10">
-            <a href ="#" class="text-gray-200"><p>
+            <a href ="#" class="text-gray-200 font-sans"><p>
             Copyright. All rights reserved.</p></a>
-            <p class="text-gray-200">Terms & Conditions</p>
+            <p class="text-gray-200 font-sans">Terms & Conditions</p>
         </div>
     </footer>
   </main>
