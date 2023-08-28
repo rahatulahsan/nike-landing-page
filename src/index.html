@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,9 @@
 </head>
 <body>
   <main class="relative">
-    <header class="w-full absolute z-10 p-2">
+    <header class="w-full absolute z-30 p-2 sm:px-8">
         
-        <nav class="bg-transparent border-gray-200 dark:bg-gray-900">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 md:bg-transparent">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
                 <img src="../assets/images/header-logo.svg" class="h-5 mr-3" alt="Flowbite Logo" />
@@ -31,13 +31,13 @@
                     <a href="#" class="block py-2 pl-3 pr-4 text-white bg-nikeorange rounded md:bg-transparent md:text-nikeorange md:p-0 dark:text-white md:dark:text-nikeorange" aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                    <a href="#popularproducts" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
+                    <a href="#superquality" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+                    <a href="#subscribe" class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-nikeorange md:p-0 dark:text-white md:dark:hover:text-nikeorange dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
                 </li>
                 </ul>
             </div>
@@ -51,10 +51,10 @@
         <div class="flex flex-col xl:flex-row">
 
             <!--Hero Container start-->
-            <div class=" relative flex flex-col space-y-8 px-6 sm:px-12 xl:w-2/5">
-                <p class="font-sans text-xl capitalize text-nikeorange">Our summer collections</p>
-                <h1 class="font-serif text-8xl font-bold max-sm:leading-[82px] max-sm:text-[72px] "><span class="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span> <span class="text-nikeorange inline-block mt-6">Nike</span> Shoes</h1>
-                <p class="font-sans text-lg text-gray-500 max-w-md xl:mb-14">Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
+            <div class=" relative flex flex-col space-y-8 px-6 sm:px-20 xl:w-2/5">
+                <p class="font-sans text-lg capitalize text-nikeorange">Our summer collections</p>
+                <h1 class="font-serif text-7xl font-bold max-sm:leading-[82px] max-sm:text-[72px] "><span class="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span> <span class="text-nikeorange inline-block mt-6">Nike</span> Shoes</h1>
+                <p class="font-sans text-base text-gray-500 max-w-md xl:mb-14">Discover stylish Nike arrivals, quality comfort, and innovation for your active life.</p>
                 <button class="flex  justify-center items-center w-3/5 font-sans py-4 text-white gap-2 bg-nikeorange border-nikeorange rounded-full cursor-pointer max-w-xs">
                     Shop now<img src="../assets/icons/arrow-right.svg" alt="arrow-right"/>
                 </button>
@@ -78,8 +78,8 @@
             <!--Hero Container end-->
 
             <!--Hero Photo Container start-->
-            <div class=" relative flex flex-1 flex-col items-center justify-center bg-hero bg-center w-full my-14 xl:min-h-screen xl:-mt-24">
-                <img src="../assets/images/big-shoe1.png" alt="big-shoe1" class="my-36 sm:mb-48"/>
+            <div class=" relative flex flex-1 flex-col items-center justify-center bg-hero bg-center w-3/5 my-14 xl:-mt-24">
+                <img src="../assets/images/big-shoe1-final.png" alt="big-shoe1" class="my-24 sm:mb-32 object-contain w-[500px]"/>
                 <!--Hero photo carousel start-->
                 <div class="flex flex-row px-4 space-x-3 absolute -bottom-7 xl:-bottom-10">
                     <div class="border-nikeorange border-2 rounded-xl cursor-pointer">
@@ -109,7 +109,7 @@
         <!--Conatiner contents start-->
         <div class="flex flex-col space-y-6 px-6 sm:px-14">
             <h2 class="font-serif text-5xl font-bold leading-tight">Our <span class="text-nikeorange">Popular</span> Products</h2>
-            <p class="font-sans text-lg text-gray-500 lg:max-w-lg">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value</p>
+            <p class="font-sans text-base text-gray-500 lg:max-w-lg">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value</p>
 
         </div>
         <!--Conatiner contents end-->
@@ -158,14 +158,14 @@
     <section id="superquality" class="max-container">
 
         <!-- Super quality top conatiner start-->
-        <div class="flex flex-col gap-10 px-6 pt-6 sm:px-10 lg:flex-row lg:mt-20">
+        <div class="flex flex-col items-center gap-10 px-6 pt-6 sm:px-10 lg:flex-row lg:mt-20">
             <!--Super Quality content start-->
             <div class="flex flex-col space-y-6 max-w-xl">
                 <h2 class="font-serif text-5xl font-bold leading-tight">We Provide You <span class="text-nikeorange">Super Quality</span> Shoes</h2>
-                <p class="font-sans text-lg text-gray-500">Ensuring premium comfort and style, our meticulously crafted footwear is 
+                <p class="font-sans text-base text-gray-500">Ensuring premium comfort and style, our meticulously crafted footwear is 
                     designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of elegance.</p>
-                <p class="font-sans text-lg text-gray-500">Our dedication to detail and excellence ensures your satisfaction</p> 
-                <button class="flex  justify-center items-center w-3/5 font-sans py-4 text-white gap-2 bg-nikeorange border-nikeorange rounded-full cursor-pointer max-w-xs">
+                <p class="font-sans text-base text-gray-500">Our dedication to detail and excellence ensures your satisfaction</p> 
+                <button class="flex justify-center items-center w-3/5 font-sans py-4 text-white gap-2 bg-nikeorange border-nikeorange rounded-full cursor-pointer max-w-xs">
                     Shop now<img src="../assets/icons/arrow-right.svg" alt="arrow-right"/>
                 </button>  
             </div>
@@ -186,24 +186,24 @@
                     <img src="../assets/icons/truck-fast.svg" alt="truck-fast"/>
 
                 </div>
-                <h3 class="font-serif text-3xl font-bold">Free shipping</h3>
-                <p class="font-sans text-lg text-gray-500">Enjoy seamless shopping with our complimentary shipping service.</p>
+                <h3 class="font-serif text-2xl font-bold">Free shipping</h3>
+                <p class="font-sans text-base text-gray-500">Enjoy seamless shopping with our complimentary shipping service.</p>
             </div>
 
             <div class="flex flex-col gap-4 bg-white rounded-xl shadow-xl px-10 py-16">
                 <div class="w-11 h-11 bg-nikeorange flex justify-center items-center rounded-full">
                     <img src="../assets/icons/shield-tick.svg" alt="shield-tick" />
                 </div>
-                <h3 class="font-serif text-3xl font-bold">Secure payment</h3>
-                <p class="font-sans text-lg text-gray-500">Experience worry-free transactions with our secure payment options.</p>
+                <h3 class="font-serif text-2xl font-bold">Secure payment</h3>
+                <p class="font-sans text-base text-gray-500">Experience worry-free transactions with our secure payment options.</p>
             </div>
             
             <div class="flex flex-col gap-4 bg-white rounded-xl shadow-xl px-10 py-16">
                 <div class="w-11 h-11 bg-nikeorange flex justify-center items-center rounded-full">
                     <img src="../assets/icons/support.svg" alt="support"/> 
                 </div>
-                <h3 class="font-serif text-3xl font-bold">Love to help you</h3>
-                <p class="font-sans text-lg text-gray-500">Our dedicated team is here to assist you every step of the way.</p>
+                <h3 class="font-serif text-2xl font-bold">Love to help you</h3>
+                <p class="font-sans text-base text-gray-500">Our dedicated team is here to assist you every step of the way.</p>
             </div>
             
         </div>
@@ -223,13 +223,13 @@
             <!--Content container start-->
             <div class="flex flex-col justify-center gap-6 lg:w-1/2">
                 <h2 class="font-serif text-5xl font-bold capitalize"><span class="text-nikeorange">Special</span> Offer</h2>
-                <p class="font-sans text-lg text-gray-500">Embark on a shopping journey that redefines your experience with unbeatable deals. 
+                <p class="font-sans text-base text-gray-500">Embark on a shopping journey that redefines your experience with unbeatable deals. 
                     From premier selections to incredible savings, we offer unparalleled value that sets us apart.</p>
-                <p class="font-sans text-lg text-gray-500">Navigate a realm of possibilities designed to fulfill your unique desires, 
+                <p class="font-sans text-base text-gray-500">Navigate a realm of possibilities designed to fulfill your unique desires, 
                     surpassing the loftiest expectations. Your journey with us is nothing short of exceptional.</p>
                 <div class="flex flex-col gap-4 items-start sm:flex-row">
-                    <button class="bg-nikeorange px-8 py-3 rounded-full text-white font-sans text-lg cursor-pointer">View Details</button>
-                    <button class="px-8 py-3 border border-black rounded-full text-black font-sans text-lg cursor-pointer">Learn More</button>
+                    <button class="bg-nikeorange px-8 py-3 rounded-full text-white font-sans text-base cursor-pointer">View Details</button>
+                    <button class="px-8 py-3 border border-black rounded-full text-black font-sans text-base cursor-pointer">Learn More</button>
                 </div>
             </div>
             <!--Content container end-->
@@ -244,24 +244,24 @@
             <!-- Content conatiner start-->
             <div class="flex flex-col justify-center items-center gap-3 lg:pt-20">
                 <h2 class="font-serif text-5xl text-center font-bold px-10 leading-tight max-w-2xl">What Our <span class="text-nikeorange">Customers</span> Say?</h2>
-                <p class="font-sans text-lg text-gray-500 text-center max-w-xl">Hear genuine stories from our satisfied customers about their exceptional experiences with us.</p>
+                <p class="font-sans text-base text-gray-500 text-center max-w-xl">Hear genuine stories from our satisfied customers about their exceptional experiences with us.</p>
             </div>
             <!--Content container end-->
 
             <!--Review container start-->
-            <div class="flex flex-col justify-center items-center mt-16 gap-12 sm:px-10 lg:flex-row lg:py-10">
-                <div class="flex flex-col justify-center items-center gap-4">
+            <div class="flex flex-col justify-center items-center mt-16 gap-12 sm:px-10 lg:flex-row lg:justify-center lg:py-10">
+                <div class="flex flex-col justify-center items-center gap-4 w-2/5">
                     <img src="../assets/images/customer2.svg" alt="customer2"/>
-                    <p class="font-sans text-lg text-gray-500 text-center px-4">The attention to detail and the quality of the product exceeded my expectations. Highly recommended!</p>
+                    <p class="font-sans text-base text-gray-500 text-center px-4">The attention to detail and the quality of the product exceeded my expectations. Highly recommended!</p>
                     <div class="flex gap-2">
                         <img src="../assets/icons/star.svg" alt="star" />
                         <p class="font-sans text-lg text-gray-500">(4.5)</p>
                     </div>
                     <h3 class="font-serif text-3xl font-bold">Morich Brown</h3>
                 </div>
-                <div class="flex flex-col justify-center items-center gap-4">
+                <div class="flex flex-col justify-center items-center gap-4 w-2/5">
                     <img src="../assets/images/customer2.svg" alt="customer2"/>
-                    <p class="font-sans text-lg text-gray-500 text-center px-4">The product not only met but exceeded my expectations. I'll definitely be a returning customer!</p>
+                    <p class="font-sans text-base text-gray-500 text-center px-4">The product not only met but exceeded my expectations. I'll definitely be a returning customer!</p>
                     <div class="flex gap-2">
                         <img src="../assets/icons/star.svg" alt="star"/>
                         <p class="font-sans text-lg text-gray-500">(4.7)</p>
@@ -285,7 +285,7 @@
     </section>
     <footer class="bg-black p-6">
         
-        <div class="max-container sm:px-8 sm:py-16">
+        <div class="max-container sm:px-24 sm:pt-16">
 
             <!--Logo and menu-->
             <div class="flex flex-col gap-16 lg:flex-row">
